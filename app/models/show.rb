@@ -5,7 +5,7 @@ class Show < ActiveRecord::Base
 
   def self.most_popular_show
     #self.pluck(:name).where(:rating)
-    self.order("rating DESC").first
+    self.order(:rating :DESC).first
   end
   
 
